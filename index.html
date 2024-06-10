@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Компания Cубботник</title>
+    <title>Компания "Модуль С""</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -60,6 +60,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hystmodal.min.css" />
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -80,7 +81,7 @@
         <div class="container-fluid">
           <div class="d-flex align-items-center">
             <div class="site-logo">
-              <a href="index.html">СУББОТНИК<span>.</span> </a>
+              <a href="index.html">МОДУЛЬ С<span>.</span> </a>
             </div>
             <div class="ml-auto">
               <nav
@@ -101,7 +102,9 @@
                     <a href="#catalog-section" class="nav-link">Каталог</a>
                   </li>
                   <li>
-                    <a href="#portfolio-section" class="nav-link">Наши работы</a>
+                    <a href="#portfolio-section" class="nav-link"
+                      >Наши работы</a
+                    >
                   </li>
                   <li>
                     <a href="#contact-section" class="nav-link">Контакты</a>
@@ -128,7 +131,7 @@
                 вносимых с улицы
               </p>
               <p class="text-center">
-                <a href="" class="btn btn-outline-white py-3 px-5"
+                <a href="#benefits-section" class="btn btn-outline-white py-3 px-5"
                   >Узнать больше</a
                 >
               </p>
@@ -198,7 +201,7 @@
                 <div class="ftco-feature-1-text">
                   <h2>Сертификация</h2>
                   <p>
-                    Компания DSG внедрила и применяет систему менеджмента
+                    Компания "Модуль С" внедрила и применяет систему менеджмента
                     качества ГОСТ ISO 9001-2011. Вся продукция сертифицирована
                   </p>
                 </div>
@@ -216,7 +219,7 @@
                 <div class="ftco-feature-1-text">
                   <h2>Под ключ</h2>
                   <p>
-                    Компания Субботник готова выполнить работу под ключ любой
+                    Компания "Модуль С" готова выполнить работу под ключ любой
                     сложности: замер, дизайнерское решение, изготовление опорной
                     конструкции и монтаж
                   </p>
@@ -235,7 +238,7 @@
                 <div class="ftco-feature-1-text">
                   <h2>Правильный подбор</h2>
                   <p>
-                    Адаптация продукции Субботник ко всем климатическим зонам
+                    Адаптация продукции "Модуль С" ко всем климатическим зонам
                     России, благодаря правильной подборке материалов и их
                     совместимости
                   </p>
@@ -256,7 +259,7 @@
             class="row align-items-center justify-content-center text-center"
           >
             <div class="col-md-7">
-              <h2 class="">Субботник</h2>
+              <h2 class="">Модуль С</h2>
               <p class="lead mx-auto desc mb-5">
                 Основная цель нашей компании – это обеспечение защиты помещений
                 от уличной грязи, влаги, пыли, сокращение затрат наших клиентов
@@ -284,116 +287,598 @@
           </div>
           <div class="row">
             <div class="col-lg-6">
+              <!-- first item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a
+                  href="#catalog-section"
+                  data-hystmodal="#modal1"
+                  class="class-item-thumbnail"
+                >
                   <img src="images/catalog/rez-skr-shet.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Резина-Скребок-Щетка</a></h2>
+                  <h2>
+                    <a href="#catalog-section" data-hystmodal="#modal1"
+                      >Резина-Скребок-Щетка</a
+                    >
+                  </h2>
                   <span>от 22 806 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
+              <div class="hystmodal" id="modal1" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div
+                    class="hystmodal__window"
+                    role="dialog"
+                    aria-modal="true"
+                  >
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/rez-skr-shet.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">
+                            Резина-Скребок-Щетка
+                          </h1>
+                          <p class="class-item-text">
+                            <span>от 22 806 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Базовая система, которая наиболее часто
+                          устанавливается для помещений с малой и средней
+                          проходимостью. Комплектуется чистящими вставками,
+                          которые монтируются в несущий профиль. Не рекомендуем
+                          использовать если основание приямка выполнено из
+                          кафельной плитки, т.к. профили не имеют нижней
+                          амортизирующей резины.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of first item -->
 
+              <!-- second item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a
+                  href="#catalog-section"
+                  class="class-item-thumbnail"
+                  data-hystmodal="#modal2"
+                >
                   <img src="images/catalog/rez-skr.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Резина-Скребок</a></h2>
+                  <h2>
+                    <a href="#catalog-section" data-hystmodal="#modal2"
+                      >Резина-Скребок</a
+                    >
+                  </h2>
                   <span>от 16 520 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
+              <div class="hystmodal" id="modal2" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div
+                    class="hystmodal__window"
+                    role="dialog"
+                    aria-modal="true"
+                  >
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/rez-skr.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">
+                            Резина-Скребок
+                          </h1>
+                          <p class="class-item-text">
+                            <span>от 16 520 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Базовая система, которая наиболее часто
+                          устанавливается для помещений с малой и средней
+                          проходимостью. Комплектуется чистящими вставками,
+                          которые монтируются в несущий профиль. Не рекомендуем
+                          использовать если основание приямка выполнено из
+                          кафельной плитки, т.к. профили не имеют нижней
+                          амортизирующей резины.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of second item -->
 
+              <!-- third item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a
+                  href="#"
+                  class="class-item-thumbnail"
+                  data-hystmodal="#modal3"
+                >
                   <img src="images/catalog/skr-shet.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Скребок-Щетка</a></h2>
+                  <h2>
+                    <a href="#" data-hystmodal="#modal3">Скребок-Щетка</a>
+                  </h2>
                   <span>от 25 560 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
 
+              <div class="hystmodal" id="modal3" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div
+                    class="hystmodal__window"
+                    role="dialog"
+                    aria-modal="true"
+                  >
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/skr-shet.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">
+                            Скребок-Щетка
+                          </h1>
+                          <p class="class-item-text">
+                            <span>от 25 560 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Алюминиевые грязезащитные решетки "Модуль С" имеют
+                          торцевые декоративные заглушки и дополнительную нижнюю
+                          амортизирующую шумопоглощающую резину, которая и
+                          обеспечивает надежную защиту от смещения ковра, что
+                          крайне важно в помещениях, где постоянно большой поток
+                          людей.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of third item -->
+
+              <!-- fourth item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a
+                  href="#"
+                  class="class-item-thumbnail"
+                  data-hystmodal="#modal4"
+                >
                   <img src="images/catalog/rez-skr-skr.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Резина-Скребок-Скребок</a></h2>
+                  <h2>
+                    <a href="#" data-hystmodal="#modal4"
+                      >Резина-Скребок-Скребок</a
+                    >
+                  </h2>
                   <span>от 15 725 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
 
+              <div class="hystmodal" id="modal4" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div
+                    class="hystmodal__window"
+                    role="dialog"
+                    aria-modal="true"
+                  >
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/rez-skr-skr.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">
+                            Резина-Скребок-Скребок
+                          </h1>
+                          <p class="class-item-text">
+                            <span>от 15 725 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Базовая система, которая наиболее часто
+                          устанавливается для помещений с малой и средней
+                          проходимостью. Комплектуется чистящими вставками,
+                          которые монтируются в несущий профиль. Не рекомендуем
+                          использовать если основание приямка выполнено из
+                          кафельной плитки, т.к. профили не имеют нижней
+                          амортизирующей резины.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of fourth item -->
+
+              <!-- fifth item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a
+                  href="#"
+                  class="class-item-thumbnail"
+                  data-hystmodal="#modal5"
+                >
                   <img src="images/catalog/shet.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Щетка</a></h2>
+                  <h2><a href="#" data-hystmodal="#modal5">Щетка</a></h2>
                   <span>от 28 880 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
+
+              <div class="hystmodal" id="modal5" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div class="hystmodal__window" role="dialog" aria-modal="true">
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/shet.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">Щетка</h1>
+                          <p class="class-item-text">
+                            <span>от 28 880 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Базовая система, которая наиболее часто устанавливается
+                          для помещений с малой и средней проходимостью.
+                          Комплектуется чистящими вставками, которые монтируются в
+                          несущий профиль. Не рекомендуем использовать если
+                          основание приямка выполнено из кафельной плитки, т.к.
+                          профили не имеют нижней амортизирующей резины.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of fifth item -->
             </div>
+
+
             <div class="col-lg-6">
+
+              <!-- sixth item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a href="#" class="class-item-thumbnail" data-hystmodal="#modal6">
                   <img src="images/catalog/rez-vors.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Резина-Ворс</a></h2>
+                  <h2><a href="#" data-hystmodal="#modal6">Резина-Ворс</a></h2>
                   <span>от 15 300 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
 
+              <div class="hystmodal" id="modal6" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div class="hystmodal__window" role="dialog" aria-modal="true">
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/rez-vors.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">Резина-Ворс</h1>
+                          <p class="class-item-text">
+                            <span>от 15 300 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Базовая система, которая наиболее часто устанавливается
+                          для помещений с малой и средней проходимостью.
+                          Комплектуется чистящими вставками, которые монтируются в
+                          несущий профиль. Не рекомендуем использовать если
+                          основание приямка выполнено из кафельной плитки, т.к.
+                          профили не имеют нижней амортизирующей резины.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of sixth item -->
+
+              <!-- seventh item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a href="#" class="class-item-thumbnail" data-hystmodal="#modal7">
                   <img src="images/catalog/vors.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Ворс</a></h2>
+                  <h2><a href="#" data-hystmodal="#modal7">Ворс</a></h2>
                   <span>от 14 760 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
 
+              <div class="hystmodal" id="modal7" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div class="hystmodal__window" role="dialog" aria-modal="true">
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/vors.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">Ворс</h1>
+                          <p class="class-item-text">
+                            <span>от 14 760 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Базовая система, которая наиболее часто устанавливается
+                          для помещений с малой и средней проходимостью.
+                          Комплектуется чистящими вставками, которые монтируются в
+                          несущий профиль. Не рекомендуем использовать если
+                          основание приямка выполнено из кафельной плитки, т.к.
+                          профили не имеют нижней амортизирующей резины.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of seventh item -->
+
+
+              <!-- eight item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a href="#" class="class-item-thumbnail" data-hystmodal="#modal8">
                   <img src="images/catalog/rez-rez-skr.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Резина-Резина-Скребок</a></h2>
+                  <h2><a href="#" data-hystmodal="#modal8">Резина-Резина-Скребок</a></h2>
                   <span>от 15 725 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
 
+              <div class="hystmodal" id="modal8" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div class="hystmodal__window" role="dialog" aria-modal="true">
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/rez-rez-skr.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">Резина-Резина-Скребок</h1>
+                          <p class="class-item-text">
+                            <span>от 15 725 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Базовая система, которая наиболее часто устанавливается
+                          для помещений с малой и средней проходимостью.
+                          Комплектуется чистящими вставками, которые монтируются в
+                          несущий профиль. Не рекомендуем использовать если
+                          основание приямка выполнено из кафельной плитки, т.к.
+                          профили не имеют нижней амортизирующей резины.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of eight item -->
+
+
+              <!-- ninth item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a href="#" class="class-item-thumbnail" data-hystmodal="#modal9">
                   <img src="images/catalog/rez-shet.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Резина-Щетка</a></h2>
+                  <h2><a href="#" data-hystmodal="#modal9">Резина-Щетка</a></h2>
                   <span>от 25 200 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
 
+              <div class="hystmodal" id="modal9" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div class="hystmodal__window" role="dialog" aria-modal="true">
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/rez-shet.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">Резина-Щетка</h1>
+                          <p class="class-item-text">
+                            <span>от 25 200 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Алюминиевые грязезащитные решетки "Модуль С" имеют торцевые декоративные заглушки и дополнительную нижнюю амортизирующую шумопоглощающую 
+                          резину, которая и обеспечивает надежную защиту от смещения ковра, что крайне важно в помещениях, где постоянно большой поток людей.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of ninth item -->
+
+
+              <!-- tenth item -->
               <div class="class-item d-flex align-items-center">
-                <a href="#" class="class-item-thumbnail">
+                <a href="#" class="class-item-thumbnail" data-hystmodal="#modal10">
                   <img src="images/catalog/rez.jpg" alt="Image" />
                 </a>
                 <div class="class-item-text">
-                  <h2><a href="#">Резина</a></h2>
+                  <h2><a href="#" data-hystmodal="#modal10">Резина</a></h2>
                   <span>от 15 725 за кв.м.</span>,
                   <span>Срок поставки: 3 дня</span>
                 </div>
               </div>
+
+              <div class="hystmodal" id="modal10" aria-hidden="true">
+                <div class="hystmodal__wrap">
+                  <div class="hystmodal__window" role="dialog" aria-modal="true">
+                    <button data-hystclose class="hystmodal__close">
+                      Закрыть
+                    </button>
+                    <div class="d-flex modal-frame">
+                      <div class="left d-block">
+                        <img
+                          src="./images/catalog/rez.jpg"
+                          alt="Алюминиевая решетка"
+                          class="modal-icon"
+                        />
+                        <div class="short-description">
+                          <h1 class="modal-title custom-font-color">Резина</h1>
+                          <p class="class-item-text">
+                            <span>от 15 725 за кв.м.</span>
+                            <span>Срок поставки: 3 дня</span>
+                          </p>
+                          <p class="class-item-text imp-price">
+                            *ЦЕНА может различаться в зависимости от размера,
+                            цвета, технических характеристик товара.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p class="class-item-text">
+                          Базовая система, которая наиболее часто устанавливается
+                          для помещений с малой и средней проходимостью.
+                          Комплектуется чистящими вставками, которые монтируются в
+                          несущий профиль. Не рекомендуем использовать если
+                          основание приямка выполнено из кафельной плитки, т.к.
+                          профили не имеют нижней амортизирующей резины.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end of fifth item -->
+
             </div>
           </div>
         </div>
@@ -426,158 +911,33 @@
               <span class="subheading">Портфолио</span>
               <h2 class="heading mb-3">Наши работы</h2>
               <p>
-                Мы занимаемся производством и поставками противоскользящих резиновых, ворсовых покрытий, 
-                специальных профилей противоскольжения из алюминия, специальных противоскользящих покрытий с высоким 
-                коэффициентом зацепа. Среди наших партнеров: Банк Сбер, сеть Лента, ТЦ Континент, Медцентр Инвитро, сеть магазинов 
-                Ярче, Медцентр Авицена, ПАО Мегафон, ТРЦ Сибирский мол, ТРЦ МЕГА
+                Мы занимаемся производством и поставками противоскользящих
+                резиновых, ворсовых покрытий, специальных профилей
+                противоскольжения из алюминия, специальных противоскользящих
+                покрытий с высоким коэффициентом зацепа. Среди наших партнеров:
+                Банк Сбер, сеть Лента, ТЦ Континент, Медцентр Инвитро, сеть
+                магазинов Ярче, Медцентр Авицена, ПАО Мегафон, ТРЦ Сибирский
+                мол, ТРЦ МЕГА
               </p>
             </div>
           </div>
 
-          <!-- <div class="tab-content">
-            <div
-              class="tab-pane fade show active"
-              id="nav-sunday"
-              role="tabpanel"
-              aria-labelledby="nav-sunday-tab"
-            >
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_1.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <h2><a href="#">ТРЦ МЕГА</a></h2>
-                      <span>400 м2</span>,
-                      <span></span>
-                    </div>
-                  </div>
-
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_2.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #2</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_3.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #3</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_4.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #4</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_1.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #5</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_1.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #1</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_2.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #2</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_3.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #3</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_4.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #4</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-
-                  <div class="class-item d-flex align-items-center">
-                    <a href="#" class="class-item-thumbnail">
-                      <img src="images/img_1.jpg" alt="Image" />
-                    </a>
-                    <div class="class-item-text">
-                      <span>Sunday 7:30am - 9:00am</span>
-                      <h2><a href="#">Fitness Class Name #5</a></h2>
-                      <span>By Justin Daniel</span>,
-                      <span>30 minutes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
           <div class="owl-carousel nonloop-block-14 block-14" data-aos="fade">
             <div class="slide">
               <div class="ftco-feature-1">
-                <div >
+                <div>
                   <span
-                    ><img src="images/portfolio/mega.jpg" alt="quality" class="custom-icon-port"
+                    ><img
+                      src="images/portfolio/mega.jpg"
+                      alt="quality"
+                      class="custom-icon-port"
                   /></span>
                 </div>
                 <div class="ftco-feature-1-text">
                   <h2>ТРЦ МЕГА</h2>
                   <p>
-                    Поставили комплексную грязезащитную систему в торговый центр 400 м2
+                    Поставили комплексную грязезащитную систему в торговый центр
+                    400 м2
                   </p>
                 </div>
               </div>
@@ -585,15 +945,19 @@
 
             <div class="slide">
               <div class="ftco-feature-1">
-                <div >
+                <div>
                   <span
-                    ><img src="images/portfolio/mega.jpg" alt="quality" class="custom-icon-port"
+                    ><img
+                      src="images/portfolio/mega.jpg"
+                      alt="quality"
+                      class="custom-icon-port"
                   /></span>
                 </div>
                 <div class="ftco-feature-1-text">
                   <h2>ТРЦ МЕГА</h2>
                   <p>
-                    Поставили комплексную грязезащитную систему в торговый центр 400 м2
+                    Поставили комплексную грязезащитную систему в торговый центр
+                    400 м2
                   </p>
                 </div>
               </div>
@@ -659,8 +1023,9 @@
             <div class="col-md-4">
               <h3 class="text-white">О нас</h3>
               <p>
-                Субботник является торгово-производственной компанией, основной специализацией которой 
-                является поставки и укладка спуциальных напольных покрытий. 
+                ООО "Субботник" является торгово-производственной компанией,
+                основной специализацией которой является поставки и укладка
+                спуциальных напольных покрытий.
               </p>
             </div>
 
@@ -678,7 +1043,7 @@
               <h3 class="text-white">Контакты</h3>
               <ul class="list-unstyled footer-links">
                 <li><a href="tel:+79513829550">+79513829550</a></li>
-                <li><a href="mailto:info@subnilk.ru"">info@subnik.ru</a></li>
+                <li><a href="mailto:info@subnilk.ru">info@subnik.ru</a></li>
               </ul>
             </div>
           </div>
@@ -723,7 +1088,9 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/hystmodal.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>

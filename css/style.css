@@ -1160,3 +1160,64 @@ h1, h2, h3, h4, h5,
   height: 200px;
   margin: 0 auto;
 }
+
+.left {
+  margin-left: 10px;
+  width: 300px;
+}
+.left .modal-icon {
+  height: 200px;
+}
+.left .short-description {
+  height: 200px;
+  text-align: center;
+}
+.left .short-description p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.left .short-description .imp-price {
+  font-size: medium;
+}
+.left .modal-title {
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: x-large;
+  margin-top: 10px;
+}
+
+.right {
+  width: 290px;
+}
+.right p {
+  padding: 20px;
+  font-size: large;
+  text-align: justify;
+}
+
+@media screen and (max-width: 478px) {
+  .modal-frame {
+    display: block !important;
+  }
+  .modal-frame .right p {
+    font-size: small;
+    padding: 0;
+  }
+  .left, .right {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .short-description {
+    height: 150px !important;
+    padding-bottom: 10px;
+  }
+  .modal-title {
+    padding-bottom: 20px;
+  }
+  .right {
+    padding-top: 10px;
+  }
+}
