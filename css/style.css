@@ -1031,6 +1031,9 @@ h1, h2, h3, h4, h5,
 
 .days {
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   margin: 0 0 50px 0;
 }
@@ -1196,6 +1199,10 @@ h1, h2, h3, h4, h5,
   padding: 20px;
   font-size: large;
   text-align: justify;
+}
+
+.tab-content {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 478px) {
