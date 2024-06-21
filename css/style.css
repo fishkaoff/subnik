@@ -1174,13 +1174,18 @@ h1, h2, h3, h4, h5,
 
 .left {
   margin-left: 10px;
-  width: 300px;
+  width: 100%;
 }
 .left .modal-icon {
   height: 200px;
+  width: 49%;
+}
+.left .modal-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .left .short-description {
-  height: 200px;
   text-align: center;
 }
 .left .short-description p {
@@ -1191,8 +1196,11 @@ h1, h2, h3, h4, h5,
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.left .short-description .imp-price {
-  font-size: medium;
+.left .short-description .short-info {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .left .modal-title {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -1201,16 +1209,49 @@ h1, h2, h3, h4, h5,
 }
 
 .right {
-  width: 290px;
+  width: 100%;
 }
 .right p {
   padding: 20px;
+  padding-top: 5px;
   font-size: large;
   text-align: justify;
 }
 
 .tab-content {
   margin: 0 auto;
+}
+
+.input_field {
+  padding: 20px;
+}
+
+input {
+  border: 0px;
+  border-bottom: 1px solid black;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.send-btn {
+  width: 200px;
+  border: 0;
+  background: #c83660;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 20px;
+  margin-left: 33%;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 478px) {
@@ -1221,16 +1262,27 @@ h1, h2, h3, h4, h5,
     font-size: small;
     padding: 0;
   }
-  .left, .right {
+  .left,
+  .right {
     width: 90%;
     margin: 0 auto;
   }
   .short-description {
-    height: 150px !important;
+    height: 100px !important;
     padding-bottom: 10px;
   }
   .modal-title {
     padding-bottom: 20px;
+  }
+  .modal-images {
+    display: block !important;
+  }
+  .input-wrapper {
+    display: block !important;
+    margin-left: 75px;
+  }
+  .send-btn {
+    margin-left: 100px;
   }
   .right {
     padding-top: 10px;
