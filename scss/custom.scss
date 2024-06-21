@@ -17,50 +17,6 @@
   margin: 0 auto;
 }
 
-.left {
-  margin-left: 10px;
-  width: 100%;
-
-  .modal-icon {
-    height: 200px;
-    width: 49%;
-  }
-
-  .modal-images {
-    display: flex;
-  }
-
-  .short-description {
-    text-align: center;
-
-    p {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .short-info {
-      display: block;
-      justify-content: center;
-    }
-  }
-
-  .modal-title {
-    font-family: $font-family-sans-serif;
-    font-size: x-large;
-    margin-top: 10px;
-  }
-}
-
-.right {
-  width: 100%;
-  p {
-    padding: 20px;
-    padding-top: 5px;
-    font-size: large;
-    text-align: justify;
-  }
-}
-
 .tab-content {
   margin: 0 auto;
 }
@@ -69,9 +25,22 @@
   padding: 20px;
 }
 
-input {
+.input_field input {
   border: 0px;
   border-bottom: 1px solid black;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .square_field input {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .square_field input {
+    width: auto;
+  }
 }
 
 input:focus {
@@ -84,6 +53,8 @@ input:focus {
 }
 
 .send-btn {
+  display: block;
+  margin: 0 auto;
   width: 200px;
   border: 0;
   background: #c83660;
@@ -92,40 +63,15 @@ input:focus {
   border-radius: 5px;
   padding: 5px 20px;
 
-  // margin: 10px;
-  margin-left: 33%;
-  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.request {
+  padding-bottom: 20px;
+  align-items: center;
 }
 
 @media screen and (max-width: 478px) {
-  .modal-frame {
-    display: block !important;
-
-    .right p {
-      font-size: small;
-      padding: 0;
-    }
-  }
-
-  .left,
-  .right {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .short-description {
-    height: 100px !important;
-    padding-bottom: 10px;
-  }
-
-  .modal-title {
-    padding-bottom: 20px;
-  }
-
-  .modal-images {
-    display: block !important; 
-  }
-
   .input-wrapper {
     display: block !important;
     margin-left: 75px;
