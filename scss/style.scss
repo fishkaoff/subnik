@@ -15,6 +15,10 @@
 // modal
 @import "modal";
 
+body {
+    overflow-x: hidden;
+}
+
 .hystmodal__window {
     margin-top: 150px !important;
     width: 1000px !important;
@@ -27,3 +31,15 @@
         width: 600px !important;
     }
 }
+
+.ftco-feature-1 p {
+    color: #000 !important;
+}
+
+.section-heading p {
+    color: #000 !important; 
+}
+
+.description p {
+    color: #000;
+} 
